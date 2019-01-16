@@ -1,0 +1,23 @@
+{
+	"name": "For The Eyes",
+	"version": "0.0.1",
+	"description": "Change the color of the webpage you are on",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_title": "What"
+	},
+	"permissions": [
+		"https://*/*",
+		"http://*/*",
+		"tabs"
+	],
+	"content_scripts": [
+		{
+     		"matches": [
+		     	"https://*/*",
+				"http://*/*"
+			],
+			"js": ["forTheEyes.js"]
+		}
+	]
+}
